@@ -414,7 +414,7 @@
 	.main-menu-container, .social-media-container { margin:0 auto; width:1270px; position:relative; }
 	.main-menu-container .main-menu { background-color:#fff; box-shadow:0 1px 3px rgba(95, 95, 95, 0.1); display:inline-block; width:100%; position:absolute; top:45px; left:0; z-index:9; padding:0 50px; }
 	
-	#logo { float:left; display:inline; padding:0px; margin:20px 0px 0px 0px; text-align:center; }
+	#logo { float:center; display:inline; padding:0px; margin:20px 0px 0px 0px; text-align:center; }
 	#logo a { width:100%; display:block; }
 	#logo a img { backface-visibility:hidden; -webkit-font-smoothing: antialiased; }
 

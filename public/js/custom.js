@@ -302,7 +302,7 @@ jQuery(document).ready(function($){
 	}/*Tabs Shortcode Ends*/
 
 	//Contact Map...
-	var $map = $('#contact_map');
+/*	var $map = $('#contact_map');
 	if( $map.length ) {
 		$map.gMap({
 			address: 'Iamdesigning, 1/52,3/53, Lal Bahadhur Colony,Shringar Nagar Road, Near Gopal Naidu School, Peelamedu, Coimbatore, TN 641004',
@@ -312,7 +312,7 @@ jQuery(document).ready(function($){
 			],
 			scrollwheel: false
 		});
-	}
+	}*/
 
 	$(window).load(function() {
 
