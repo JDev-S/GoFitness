@@ -2,85 +2,102 @@
 
 @section('contenido')
 
-<div class="breadcrumb-wrapper">
-            	<div class="container">
-                	<h1>Contactános</h1>
-                </div>
-            </div>
-            <!-- breadcrumb ends here -->
-            <div id="main">
-                <!-- main-content starts here -->
-                <div id="main-content">
-                    <section id="primary" class="content-full-width">
-                        <div class="fullwidth-section full-contact dt-sc-paralax">
-                            <div class="container">
-                            	<div class="dt-sc-one-half column first">
-                                	<h3>Contact us</h3>
-                                    <div id="ajax_contact_msg"></div>
-                                    <form name="frmcontact" action="php/send.php" method="post" id="contact-form">
-                                    	<div class="dt-sc-one-half column first">
-                                        	<input type="text" name="txtname" placeholder="Enter name..." required>
-                                        </div>
-                                        <div class="dt-sc-one-half column">
-                                        	<input type="email" name="txtemail" placeholder="Enter email..." required>
-                                        </div>
-                                        <div class="clear"></div>
-                                        <div class="selection-box">
-                                            <select name="cmbsubject">
-                                                <option value="Ask a Question?">Ask a Question?</option>
-                                                <option value="What are all benefits of Gym?">What are all benefits of Gym?</option>
-                                                <option value="What are the types of Gym?">What are the types of Gym?</option>
-                                            </select>
-                                        </div>
-                                        <textarea name="txtmessage" placeholder="Type your queries..." required></textarea>
-                                        <input type="submit" name="submit" value="Submit Query">
-                                    </form>
-                                </div>
-                                <div class="dt-sc-one-half column">
-                                	<h3>We are here</h3>
-                                    <div id="contact_map"> </div> 
-                                    <div class="dt-sc-hr-invisible"></div>
-                                    <div class="dt-sc-one-half column first">
-                                    	<div class="dt-sc-contact-info type1 address"><p><i class="fa fa-rocket"></i>121 King St, Melbourne VIC <br> 3000, Australia</p></div>
-                                        <div class="dt-sc-contact-info type1 time"><p><i class="fa fa-clock-o"></i>CLASSES TIMING <br>8AM - 12AM<br> Saturday - Wednesday </p></div>
-                                    </div>
-                                    <div class="dt-sc-one-half column">
-                                    	<div class="dt-sc-contact-info type1"><p><i class="fa fa-phone"></i>+1 200 258 2145</p></div>
-                                        <div class="dt-sc-hr-invisible-small"></div>
-                                        <div class="dt-sc-contact-info type1"><p><i class="fa fa-globe"></i><a href="http://www.google.com" target="_blank">google.com</a></p></div>
-                                        <div class="dt-sc-hr-invisible-small"></div>
-                                        <div class="dt-sc-contact-info type1"><p><i class="fa fa-envelope"></i><a href="mailto:yourname@somemail.com">yourname@somemail.com</a></p></div>
-                                    </div>
-                                </div>
-                            </div>
-						</div>
-                        <div class="dt-sc-hr-invisible-medium"></div>
-                        <div class="fullwidth-section dt-sc-paralax">
-                            <div class="container">
-                            	<div class="dt-sc-one-third column first">
-                                	<div class="contact-pack">
-                                    	<h3 class="section-title3">Full Fitness <br><span>Package</span></h3>
-                                        <p><b>Fitness Zone</b> generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </p>
-                                    </div>
-                                </div>
-                                <div class="dt-sc-one-third column">
-                                	<div class="contact-pack">
-                                    	<h3 class="section-title3">Tons of <br><span>Shortcodes</span></h3>
-                                        <p><b>Fitness Zone</b> generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </p>
-                                    </div>
-                                </div>
-                                <div class="dt-sc-one-third column">
-                                	<div class="contact-pack">
-                                    	<h3 class="section-title3">With In-Built  <br><span>Page Builder</span></h3>
-                                        <p><b>Fitness Zone</b> generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </p>
-                                    </div>
-                                </div>
-                            </div>
-						</div>
-                        <div class="dt-sc-hr-invisible-large"></div>
-                    </section>
-				</div>
-                <!-- main-content ends here -->
-            </div>
+<div class="breadcrumb-wrapper ">
+    <div class="container">
+        <h1>Contact Info</h1>   </div>
+</div>
+
+<div id="main-content">
+              <div class="container">
+                  <div class="dt-sc-hr-invisible"></div>
+                  <div class="dt-sc-hr-invisible"></div>
+  
+                    
+                                          <section id="primary" class="content-full-width">
+                    
+                    <article id="post-72" class="post-72 page type-page status-publish hentry"><div class="column dt-sc-two-third  space first"><h3 class="border-title "><span>&nbsp;Google Map&nbsp;</span></h3>
+<!--<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        // the div that will contain the map
+        var mapdiv = jQuery("#responsive_map_1731210375"); 
+        // markers should be clustered?
+        var clustering = "no"; 
+        // Create the map in the div 
+        mapdiv.gMapResp({
+            maptype: google.maps.MapTypeId.ROADMAP,
+            log: false,
+            zoom: 13,
+            markers: [{
+                        address: '1/52, 3/53 Lal Bahadur Colony, Peelamedu, Coimbatore, Tamil Nadu 641004', 
+                        key: '1',html:'<b>Iamdesigning</b><br> 1/52, 3/53 Lal Bahadur Colony, <br> Peelamedu, <br> Coimbatore,<br> Tamil Nadu 641004<br><strong><a target=\'_blank\' href=\'http://maps.google.com/?daddr=1%2F52%2C+3%2F53+Lal+Bahadur+Colony%2C+Peelamedu%2C+Coimbatore%2C+Tamil+Nadu+641004\'>(directions to our address)</a></strong>',
+                        popup: true,
+                        flat: true,
+                        icon: {
+                            image: 'https://fitnesszonewp.wpengine.com/wp-content/plugins/responsive-maps-plugin/includes/icons/green.png'}}],
+            panControl: false,
+            zoomControl: false,
+            draggable: true,
+            scrollwheel: false,
+            mapTypeControl: false,
+            scaleControl: false,
+            streetViewControl: false,
+            overviewMapControl: true,
+            fullscreenControl: false,
+            styles: [{"stylers":[{"featureType":"all"},{"saturation":-100},{"gamma":0.50},{"lightness":30}]}],
+            latitude: null,
+            longitude: null,
+            onComplete: function() {
+                var gmap = mapdiv.data('gmap').gmap;
+                if (clustering.length  != 0 && clustering == "yes") {
+                    var markerCluster = new MarkerClusterer(gmap, mapdiv.data('gmap').markers, {imagePath: 'https://fitnesszonewp.wpengine.com/wp-content/plugins/responsive-maps-plugin/includes/img/m'});
+                }
+            }
+        });
+        gmap = mapdiv.data('gmap').gmap;
+        });
+      </script>-->
+    <div id="responsive_map_1731210375" class="responsive-map" style="height: 445px; width: 100%; position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div style="overflow: hidden;"></div><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div tabindex="0" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;"><div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"></div></div><div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;"><p class="gm-style-pbt"></p></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;"><div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div></div><iframe aria-hidden="true" frameborder="0" tabindex="-1" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe></div></div></div></div>
+<div class="column dt-sc-one-third  space "><h3 class="border-title "><span>&nbsp;Contact Info&nbsp;</span></h3>
+<div class="dt-sc-contact-info address type1"><p><i class="fa fa-rocket"></i>No: 58 A, East Madison St<br>Baltimore, MD, USA</p></div>
+<div class="dt-sc-hr-invisible-small  "></div>
+<div class="dt-sc-contact-info type1"><p><i class="fa fa-clock-o"></i>Monday to Saturday 04:00 - 20:00</p></div>
+<div class="dt-sc-hr-invisible  "></div>
+<div class="dt-sc-contact-info type1"><p><i class="fa fa-phone"></i>+1 200 258 2145</p></div>
+<div class="dt-sc-hr-invisible  "></div>
+<div class="dt-sc-contact-info type1"><p><i class="fa fa-mobile-phone"></i>+91 98941 25406</p></div>
+<div class="dt-sc-hr-invisible  "></div>
+<div class="dt-sc-contact-info type1"><p><i class="fa fa-fax"></i>+1 100 458 2345</p></div>
+<div class="dt-sc-hr-invisible  "></div>
+<div class="dt-sc-contact-info type1"><p><i class="fa fa-envelope"></i><a href="mailto:yourname@somemail.com">yourname@somemail.com</a></p></div>
+<div class="dt-sc-hr-invisible  "></div>
+<div class="dt-sc-contact-info type1"><p><i class="fa fa-globe"></i><a target="_blank" href="http://www.google.com">google.com</a></p></div></div>
+<div class="dt-sc-hr-invisible-medium  "></div>
+<div class="column dt-sc-one-third  space first"><h5 class="border-title "><span>Working Hours</span></h5>
+<div class="working-hours"><ul><p></p><li>Monday<span>16:00 - 20:00</span></li>
+<li>Saturday<span>10:00 - 20:00</span></li>
+<li>Sunday<span>10:00 - 14:00</span></li></ul><p><b>Note:</b> At vero eos et accusamus dignissimos ducimus will be presented.</p></div></div>
+<div class="column dt-sc-one-third  space "><h5 class="border-title "><span>Endurance&nbsp;Gym</span></h5>
+<div class="dt-sc-contact-info address "><p><i class="fa fa-rocket"></i>Entrance Gym<br>CS Nagar 2nd Cross, Vadavalli, Cbe, TN, IND</p></div>
+<div class="dt-sc-hr-invisible-small  "></div>
+<div class="dt-sc-contact-info "><p><i class="fa fa-envelope"></i><a href="mailto:entrancegym@somemail.com">entrancegym@somemail.com</a></p></div>
+<div class="dt-sc-hr-invisible-small  "></div>
+<div class="dt-sc-contact-info "><p><i class="fa fa-phone"></i>+1 980 258 4056</p></div>
+<div class="dt-sc-hr-invisible-small  "></div>
+<div class="dt-sc-contact-info "><p><i class="fa fa-globe"></i><a target="_blank" href="http://www.yahoo.com">yahoo.com</a></p></div></div>
+<div class="column dt-sc-one-third  space "><h5 class="border-title "><span>Hi-Tech&nbsp;Gym</span></h5>
+<div class="dt-sc-contact-info address "><p><i class="fa fa-rocket"></i>Hitech-Gym<br>SIHS Colony - Airport Road, Cbe, TN, IND</p></div>
+<div class="dt-sc-hr-invisible-small  "></div>
+<div class="dt-sc-contact-info "><p><i class="fa fa-envelope"></i><a href="mailto:hitechgym@somemail.com">hitechgym@somemail.com</a></p></div>
+<div class="dt-sc-hr-invisible-small  "></div>
+<div class="dt-sc-contact-info "><p><i class="fa fa-phone"></i>+1 200 543 7564</p></div>
+<div class="dt-sc-hr-invisible-small  "></div>
+<div class="dt-sc-contact-info "><p><i class="fa fa-globe"></i><a target="_blank" href="http://www.amazon.com">amazon.com</a></p></div></div>
+<div class="social-bookmark"></div>                    </article>
+                  </section>
+  
+                  
+              </div>
+              <div class="dt-sc-hr-invisible-large"></div>
+          </div>
 
 @stop
