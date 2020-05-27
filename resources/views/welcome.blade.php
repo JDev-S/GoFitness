@@ -9,7 +9,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title> Fitness - Multipurpose Theme </title> 
+	<title> GO FITNESS </title> 
 	
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -69,7 +69,7 @@
     	<div class="inner-wrapper">
         	<!-- header-wrapper starts here -->
              <div id="logo">
-                     <a title="Travel" href="index.html"><img title="Fitness" alt="Fitness" src="images/logo.jpg" width="200px" height="200px"></a>
+                     <a title="Travel" href="/"><img title="Fitness" alt="Fitness" src="images/logo.jpg" width="200px" height="200px"></a>
             </div>
         	<div id="header-wrapper">
             	<header id="header" class="header4">
@@ -79,17 +79,17 @@
                                 <div class="dt-menu-toggle" id="dt-menu-toggle">Menu<span class="dt-menu-toggle-icon"></span></div>
                                 <nav id="main-menu">
                                     <ul id="menu-main-menu" class="menu">
-                                        <li class="menu-item-simple-parent menu-item-depth-0 current_page_item"><a href="/"> <i class="fa fa-home"></i> Inicio</a></li>
-                                        <li class="menu-item-megamenu-parent  megamenu-4-columns-group menu-item-depth-0"><a href="/clases"><i class="fa fa-user"></i> Clases</a> </li>
-                                        <li class="menu-item-simple-parent menu-item-depth-0"><a href="/videos_demostrativos"><i class="fa fa-cubes"></i>Videos demostrativos</a>
+                                        <li class="menu-item-simple-parent menu-item-depth-0 current_page_item"><a href="/"> <i class="fa fa-home fa-1x"></i> Inicio</a></li>
+                                        <li class="menu-item-megamenu-parent  megamenu-4-columns-group menu-item-depth-0"><a href="/clases"><i class="fa fa-clock-o fa-1x"></i> Clases</a> </li>
+                                        <li class="menu-item-simple-parent menu-item-depth-0"><a href="/videos_demostrativos"><i class="fa fa-video-camera fa-1x"></i>Videos demostrativos</a>
                                         </li>
-                                        <li class="menu-item-megamenu-parent  megamenu-4-columns-group menu-item-depth-0"> <a href="/acerca_de"> <i class="fa fa-gift"></i> Acerca de </a></li>
+                                        <li class="menu-item-megamenu-parent  megamenu-4-columns-group menu-item-depth-0"> <a href="/acerca_de"> <i class="fa fa-user fa-1x"></i> Acerca de </a></li>
                                         
-                                        <li class="menu-item-megamenu-parent  megamenu-4-columns-group menu-item-depth-0"> <a href="/contacto" title=""> <i class="fa fa-pencil"></i> Contacto </a>
+                                        <li class="menu-item-megamenu-parent  megamenu-4-columns-group menu-item-depth-0"> <a href="/contacto" title=""> <i class="fa fa-mobile fa-1x"></i> Contacto </a>
                                         </li>
-                                        <li class="menu-item-megamenu-parent  megamenu-4-columns-group menu-item-depth-0"><a href="plan_fitness"> <i class="fa fa-camera"></i> Plan Fitness</a>
+                                        <li class="menu-item-megamenu-parent  megamenu-4-columns-group menu-item-depth-0"><a href="plan_fitness"> <i class="fa fa-list-alt fa-1x"></i> Plan Fitness</a>
                                         </li>
-                                        <li class="menu-item-simple-parent menu-item-depth-0"><a href="/iniciar_sesion"> <i class="fa fa-envelope"></i> Iniciar sesión</a>
+                                        <li class="menu-item-simple-parent menu-item-depth-0"><a href="/iniciar_sesion"> <i class="fa fa-sign-in"></i> Iniciar sesión</a>
                                            
                                         </li>
                                     </ul>
@@ -112,7 +112,7 @@
                     	<div class="column dt-sc-one-fourth first">
                         	<aside class="widget widget_text">
                                 <div class="textwidget">
-                                	<h3 class="widgettitle"><span class="fa fa-user"></span>About Us</h3>
+                                	<h3 class="widgettitle"><span class="fa fa-user"></span>Acerca de </h3>
                                     <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,  making it look like readable English. </p>
                                     <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
                                 </div>
@@ -120,15 +120,15 @@
                         </div>
                         <div class="column dt-sc-one-fourth">
 							<aside class="widget widget_text">
-                            	<h3 class="widgettitle"><span class="fa fa-link"></span>Useful Links</h3>
+                            	<h3 class="widgettitle"><span class="fa fa-link"></span>Links rápidos</h3>
                                 <div class="textwidget">
                                     <ul>
-                                        <li><a href="#">Fitness Tips</a></li>
-                                        <li><a href="#">Faq's</a></li>
-                                        <li><a href="#">Workout Programs</a></li>
-                                        <li><a href="#">Fitness Camps</a></li>
-                                        <li><a href="#">Blogs</a></li>
-                                        <li><a href="#">Fitness Updates</a></li>
+                                        <li><a href="/">Inicio</a></li>
+                                        <li><a href="/videos_demostrativos">Videos demostrativos</a></li>
+                                        <li><a href="/acerca_de">Acerca de</a></li>
+                                        <li><a href="/contacto">Contacto</a></li>
+                                        <li><a href="/plan_fitness">Plan fitness</a></li>
+                                        <li><a href="/iniciar_sesion">Iniciar sesión</a></li>
                                     </ul>
                                 </div>
                             </aside>
@@ -136,24 +136,9 @@
 
                         <div class="column dt-sc-one-fourth">
                         	<aside class="widget widget_recent_entries">
-                            	<h3 class="widgettitle"><span class="fa fa-calendar"></span>Upcoming Events</h3>
+                            	<h3 class="widgettitle"><span class="fa fa-map-marker"></span>Ubicacion</h3>
                                 <div class="recent-posts-widget">
-                                	<ul>
-                                    	<li>
-                                        	<a href="#" class="entry-thumb"><img src="/images/blog-thumb.jpg" alt="" title=""></a>
-                                            <h4><a href="#">Training with Dumbell</a></h4>
-                                            <div class="entry-metadata">
-                                            	<p class="date">26 May 2014</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                        	<a href="#" class="entry-thumb"><img src="/images/blog-thumb1.jpg" alt="" title=""></a>
-                                            <h4><a href="#">Create the Adonis Effect</a></h4>
-                                            <div class="entry-metadata">
-                                            	<p class="date">24 May 2014</p>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                	<h2>Se mostrara aqui un mapa</h2>
                                 </div>
 							</aside>
 					    </div>
@@ -182,7 +167,9 @@
                             <li><a href="#">  Help Centre </a></li>
                             <li><a href="#"> Site Map </a></li>
                         </ul>
-                        <p>&copy; 2014 - FitnessMark. Design: BuddhaThemes</p>
+                        <p>&copy;<?php
+                        $fecha = date('Y');
+                        echo $fecha;?> Go Fitness. Desarrollado por  <a href="https://jdevs.com.mx/" target="_blank">JDev-S</a>   </p>
                     </div>
                 </div>
             </footer>
@@ -192,6 +179,7 @@
 </div><!-- **Wrapper - End** -->
 
 <!-- **jQuery** -->
+@yield('scripts')
 <script type="text/javascript" src="/js/jquery.plugins.min.js"></script>
 <!--<script type="text/javascript" src="/js/jquery.nicescroll.min.js"></script>-->
 

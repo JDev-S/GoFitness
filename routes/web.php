@@ -40,3 +40,7 @@ Route::get('/plan_fitness', function () {
 Route::get('/videos_demostrativos', function () {
     return view('/principal/videos_demostrativos');
 });
+
+Route::get('/registrarse', function () {
+    return view('/principal/registrarse');
+});

@@ -1177,7 +1177,7 @@
 	.dt-sc-bmi-frm .bmi-result { background:url(images/bmi-frm-bg.png) bottom no-repeat #edeee8; width:219px; position:absolute; top:0px; right:0px; height:100%; text-align:center; }
 	.dt-sc-bmi-frm .bmi-result label { float:none; font-size:20px; color:#17161b; display:inline-block; margin:11px 0px 5px 0px }
 	.fancyInline { text-transform:uppercase; font-weight:500; font-size:16px; }
-	.dt-sc-paralax.full-paralax4 h2, .dt-sc-paralax .dt-sc-bmi-frm label { color:#ffffff; }
+	.dt-sc-paralax.full-paralax4 h2, .dt-sc-paralax .dt-sc-bmi-frm label { color:#000000; }
 	.ajax_subscribe_msg { margin-bottom: 20px; text-align: center; display:inline-block; width:100%; }
 	
 	.bmi-container ul.dt-sc-tabs-frame > li, .full-paralax4 ul.dt-sc-tabs-frame > li { margin-right:5px; }

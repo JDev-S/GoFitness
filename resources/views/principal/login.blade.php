@@ -19,32 +19,32 @@
 
 
 
-		<h2>Login</h2>
+		<h2>Logueate</h2>
 
 		<form class="woocommerce-form woocommerce-form-login login" method="post">
 
 			
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-				<label for="username">Username or email address <span class="required">*</span></label>
+				<label for="username">Email<span class="required">*</span></label>
 				<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" value="">
 			</p>
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-				<label for="password">Password <span class="required">*</span></label>
+				<label for="password">Contraseña <span class="required">*</span></label>
 				<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password">
 			</p>
 
 			
 			<p class="form-row">
-				<input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="4c34c76378"><input type="hidden" name="_wp_http_referer" value="/my-account/">				<input type="submit" class="woocommerce-Button button" name="login" value="Login">
+				<input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="4c34c76378"><input type="hidden" name="_wp_http_referer" value="/my-account/">				<input type="submit" class="woocommerce-Button button" name="login" value="Inicar sesión">
 
 			</p>
             
             <p >
-				<a href="">No tengo cuenta...</a>
+				<a href="/registrarse">No tengo cuenta...</a>
 			</p>
             
 			<p >
-				<a href="">Lost your password?</a>
+				<a href="">No sabes tu contraseña?</a>
 			</p>
             
 

@@ -348,15 +348,13 @@
 	
 	.widget.widget_text .textwidget ul.dt-sc-fancy-list li:before { top: 1px; }
 	
-	.widget.quick_links ul li a { font-weight:500; }
-	.widget.quick_links ul li a:hover { color:#3a3a3a; }
-	
-	.widget-intro-text { background:#f4f4f4; padding:20px 30px; }
-	.widget-intro-text .dt-sc-button { font-weight:bold; }
-	.widget-intro-text .dt-sc-button.medium { background-image:none; }
-	
-	.widget.quick_links li { border-top:1px solid #f4f4f4; line-height:35px; }
-	.widget.quick_links li:last-child { border-bottom:1px solid #f4f4f4; }
+	.widget.widget_text ul.quick_links li { border-bottom:0; padding-left:25px; }
+	.widget.widget_text ul.quick_links li:before { content:"\f0c1"; }
+	.widget ul.quick_links li a { font-weight:500; color:#9bb70d;  }
+
+	.widget ul.quick_links li a:hover { color:#3a3a3a; }
+	.widget .quick_links li { border-top:1px solid #f4f4f4; line-height:35px; }
+	.widget .quick_links li:last-child { border-bottom:1px solid #f4f4f4; }
 	
 	/*----*****---- << Newsletter widget >> ----*****----*/
 	.widget .subscribe-frm, .widget.widget_search #searchform { position:relative; float:left; width:100%; }
@@ -676,7 +674,7 @@
    .megamenu-3-columns-group .megamenu-child-container ul.sub-menu li.fill-two-columns.menu-item-fullwidth .widget { width:340px; }	
    
 	/*----*****---- << Breadcrump >> ----*****----*/
-	.breadcrumb-wrapper { background:#fff; display:inline-block; width:100%; padding-top:74px; margin-top:0px; border-bottom:1px solid #f4f4f4; float:left; }
+	.breadcrumb-wrapper { background:#fff; display:inline-block; width:100%; padding-top:0px; margin-top:0px; border-bottom:1px solid #f4f4f4; float:left; }
 	.breadcrumb-wrapper h1 { text-transform:uppercase; font-size:40px; float:left; }
 	.breadcrumb-wrapper .breadcrumb { text-align:right; padding:5px 0 8px; float:right; margin-top:11px; }
 	.breadcrumb-wrapper .breadcrumb a, .breadcrumb-wrapper .breadcrumb h4 { display:inline-block; }
@@ -1028,7 +1026,7 @@
 		.dt-sc-workout-detail .dt-excersise-meta { border-bottom: 0 none; margin-bottom: 0; padding-bottom: 0; padding-left: 0; }
 		.dt-excersise-meta sup { top:-6px; font-size:10px; }
 		.dt-excersise-meta, .dt-excersises.type2 .dt-excersise-title, .dt-sc-workout-detail .dt-excersise-title, .dt-excersise-title.title { display:inline-block; width:100%; position:relative; padding-left:76px; }
-		.dt-sc-workout-detail .dt-excersise-meta { border-bottom:1px solid #e6e6e6; margin-bottom:20px; padding-bottom:24px; }
+		.dt-sc-workout-detail .dt-excersise-meta { border-bottom:1px solid #e6e6e6; margin-bottom:20px; padding-bottom:5px; }
 		.dt-excersise-meta p { margin-bottom:0; }
 		
 		.dt-excersises p.count, .dt-sc-event-title p.count, .dt-excersise-title.title p.count { display:inline-block; width:56px; height:56px; border:3px solid #6a695e; border-radius:56px; text-align:center; line-height:19px; font-weight:500; padding-top:4px;  margin-right:15px; }

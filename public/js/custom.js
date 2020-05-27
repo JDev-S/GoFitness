@@ -567,28 +567,67 @@ jQuery(document).ready(function($){
 	});
 
 	//BMI Form Validation...
-	$('form[name="frmbmi"]').validate({
+	$('form[name="frmhombre"]').validate({
 		rules: { 
-			txtfeet: { required: true },
-			txtinches: { required: true },
-			txtlbs: { required: true }
+			txtm: { required: true },
+			txtcm: { required: true },
+			txtkg: { required: true }
 		},
 		errorPlacement: function(error, element) { }
 	});
 
 	//BMI Calculation...
-	$('form[name="frmbmi"]').submit(function(){
+	$('form[name="frmhombre"]').submit(function(){
 		var This = $(this);
 		if($(This).valid()) {
-			var fet = $('input[name="txtfeet"]').val();
-			var inc = $('input[name="txtinches"]').val();
-			var tinc = ( parseInt(fet) * 12 ) + parseInt(inc);
+			var fet = $('input[name="txtm"]').val();
+			var inc = $('input[name="txtcm"]').val();
+			var tinc = ( parseInt(fet)) + (parseInt(inc)/100);
 			
-			var lbs = $('input[name="txtlbs"]').val();
+			var lbs = $('input[name="txtkg"]').val();
 			
-			var bmi = ( parseFloat(lbs) / (tinc * tinc) ) * 703;
+			var bmi = ( parseFloat(lbs) / (tinc * tinc) );
+            //alert(fet+"  "+inc+"  "+tinc+"   "+lbs+"   "+bmi);
 			
-			$('input[name="txtbmi"]').val(parseFloat(bmi).toFixed(1));
+			$('input[name="txtimc"]').val(parseFloat(bmi).toFixed(1));
+		}
+		return false;
+	});
+	
+	//BMI View...
+	if($("a.fancyInline").length) {
+		$("a.fancyInline").fancybox({
+			scrolling: 'no',
+			width: 'auto',
+			height: 'auto'
+		});
+	}
+    
+    
+    	//BMI Form Validation...
+	$('form[name="frmujer"]').validate({
+		rules: { 
+			txtmts: { required: true },
+			txtcms: { required: true },
+			txtkgs: { required: true }
+		},
+		errorPlacement: function(error, element) { }
+	});
+
+	//BMI Calculation...
+	$('form[name="frmujer"]').submit(function(){
+		var This = $(this);
+		if($(This).valid()) {
+			var fet = $('input[name="txtmts"]').val();
+			var inc = $('input[name="txtcms"]').val();
+			var tinc = ( parseInt(fet)) + (parseInt(inc)/100);
+			
+			var lbs = $('input[name="txtkgs"]').val();
+			
+			var bmi = ( parseFloat(lbs) / (tinc * tinc) );
+            //alert(fet+"  "+inc+"  "+tinc+"   "+lbs+"   "+bmi);
+			
+			$('input[name="txtimcs"]').val(parseFloat(bmi).toFixed(1));
 		}
 		return false;
 	});
