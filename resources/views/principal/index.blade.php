@@ -167,7 +167,9 @@
                                 <div class="dt-sc-one-third column animate" data-animation="fadeInUp" data-delay="100">
                                     <div class="dt-excersises type2">
                                         <div class="dt-excersise-thumb">
-                                            <iframe src="http://player.vimeo.com/video/106579765" height="250"></iframe>
+                                            <!--<iframe src="http://player.vimeo.com/video/106579765" height="250"></iframe>-->
+                                            <!--<iframe width="420" height="200" src=" https://www.youtube.com/embed/'.$items->url.'"?disablekb=1&start=0&end=60&modestbranding=1&rel=0&showinfo=1&controls=0"; ?>" ></iframe>-->
+                                            
                                         </div>
                                         <div class="dt-excersise-detail">
                                             <div class="dt-excersise-title">

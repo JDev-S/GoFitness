@@ -70,8 +70,11 @@
                             <div class="dt-sc-portfolio-container isotope" style="position: relative; overflow: hidden; height: 3152px;">
 	                            <div class="portfolio dt-sc-one-fourth column flexibility games isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
                                 <div class="portfolio-thumb">
-                                    <img src="images/portfolio1.jpg" alt="" title="">
-                                    <div class="image-overlay">
+                                    <!--<img src="images/portfolio1.jpg" alt="" title="">-->
+                                   <!--<iframe width="420" height="200" src=" https://www.youtube.com/embed/'.$items->url.'"?disablekb=1&start=0&end=60&modestbranding=1&rel=0&showinfo=1&controls=0"; ?>" ></iframe>-->
+                                    <iframe src="https://www.youtube.com/embed/r0pL5djBbSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    <!--<div class="image-overlay">
                                         <div class="fig-content-wrapper">
                                             <div class="fig-overlay">
                                               <p>
@@ -80,7 +83,7 @@
                                               </p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>-->
                                 </div>
                                 <div class="portfolio-detail">
                                     <div class="portfolio-title">

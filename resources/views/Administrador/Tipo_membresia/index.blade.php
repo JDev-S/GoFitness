@@ -2,7 +2,7 @@
 @section('contenido')
 
 <div class="container justify-content-center align-items-center">
-    <h2>Administración de Roles</h2>
+    <h2>Administración de tipos de membresias</h2>
   <br>
     
   <button type="button" class="btn btn-success" data-toggle="modal" data-target="#insertModal">Agregar</button>
@@ -14,22 +14,23 @@
       <table  id="table_id"class="table table-condensed table-striped table-bordered" style="width:auto">
           <thead>
           <tr>
-          <th>Descripcion del rol</th>
+          <th>Nombre de la membresia</th>
 
               <th>Acciones</th>
             
           </tr>
           </thead>
           <tbody>
-          @foreach($roles as $rol)
+          @foreach($tipos_membresia as $tipo_membresia)
               <tr>
-              <td>{{ $rol->descripcion}}</td>
+              <td>{{ $tipo_membresia->nombre_membresia}}</td>
                  
                  
                   <td>
                   
-                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" data-id="<?php echo $rol->id_rol;?>"  data-descripcion="<?php echo $rol->descripcion;?>" >Eliminar</button>
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editModal"  data-descripcion="<?php echo $rol->descripcion;?>"data-id="<?php echo $rol->id_rol;?>">Editar</button>
+                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" data-id="<?php echo $tipo_membresia->id_tipo_membresia;?>"  data-nombre="<?php echo $tipo_membresia->nombre_membresia;?>" >Eliminar</button>
+                      
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editModal"  data-nombre="<?php echo $tipo_membresia->nombre_membresia;?>"data-id="<?php echo $tipo_membresia->id_tipo_membresia;?>">Editar</button>
                   </td>
 
               </tr>
@@ -51,12 +52,12 @@
        </button>
      </div>
      <div class="modal-body">
-     {{ Form::open(array('action' => 'RolController@eliminar', 'method' => 'post','id'=>'student-settings','name'=>'loginform')) }}
+     {{ Form::open(array('action' => 'Tipo_membresiaController@eliminar', 'method' => 'post','id'=>'student-settings','name'=>'loginform')) }}
          <div class="form-group">
            <label for="recipient-name" class="col-form-label">¿Seguro que desea eliminar el registro?</label>
          </div>
          <div class="modal-footer">
-         {{ Form::hidden('id_rol') }}
+         {{ Form::hidden('id_tipo_membresia') }}
        {!! Form::submit( 'Si', ['class' => 'btn btn-danger', 'name' => 'submitbutton', 'value' => 'login'])!!}
        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
        </div>
@@ -72,7 +73,7 @@
  <div class="modal-dialog" role="document">
    <div class="modal-content">
      <div class="modal-header">
-       <h5 class="modal-title" id="insertModalLabel">Ingresar Nuevo Auto</h5>
+       <h5 class="modal-title" id="insertModalLabel">Ingresar Categoria</h5>
        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
          <span aria-hidden="true">&times;</span>
        </button>
@@ -80,12 +81,12 @@
      <div class="modal-body">
     
 
-     {{ Form::open(array('action' => 'RolController@insertar', 'method' => 'post','id'=>'student-settings','name'=>'loginform','enctype'=>'multipart/form-data')) }}
+     {{ Form::open(array('action' => 'Tipo_membresiaController@insertar', 'method' => 'post','id'=>'student-settings','name'=>'loginform','enctype'=>'multipart/form-data')) }}
          <div class="form-group">
-           <label for="recipient-name" class="col-form-label">Descripcion:</label>
-           {{ Form::text('descripcion', '', array('id' => 'descripcion',  'placeholder' => 'Escribe un rol','required' => 'required')) }}
+           <label for="recipient-name" class="col-form-label">Nombre de la membresia:</label>
+           {{ Form::text('nombre_membresia', '', array('id' => 'nombre_membresia',  'placeholder' => 'Escribe nombre de membresia','required' => 'required')) }}
          </div>
-         
+        
         
          <div class="modal-footer">
        {!! Form::submit( 'Insertar', ['class' => 'btn btn-primary', 'name' => 'submitbutton', 'value' => 'login'])!!}
@@ -110,11 +111,11 @@
       </button>
     </div>
     <div class="modal-body">
-      {{ Form::open(array('action' => 'RolController@actualizar', 'method' => 'post','id'=>'student-settings','name'=>'loginform','enctype'=>'multipart/form-data')) }}
+      {{ Form::open(array('action' => 'Tipo_membresiaController@actualizar', 'method' => 'post','id'=>'student-settings','name'=>'loginform','enctype'=>'multipart/form-data')) }}
         <div class="form-group">
-          <label for="recipient-name" class="col-form-label">Rol:</label>
-           {{ Form::text('descripcion', '', array('id' => 'descripcion','class'=>'form-control',  'placeholder' => 'Escribe el rol ','required' => 'required')) }}
-           {{ Form::hidden('id_rol', '', array('id' => 'id_rol',  'placeholder' => 'Id')) }}
+          <label for="recipient-name" class="col-form-label">Marca:</label>
+           {{ Form::text('nombre_membresia', '', array('id' => 'nombre_membresia','class'=>'form-control',  'placeholder' => 'Escribe una categoria ','required' => 'required')) }}
+           {{ Form::hidden('id_tipo_membresia', '', array('id' => 'id_tipo_membresia',  'placeholder' => 'Id')) }}
         </div>
 
         <div class="modal-footer">
@@ -133,11 +134,11 @@
 $('#editModal').on('show.bs.modal', function (event) {
 var button = $(event.relatedTarget)
 var id = button.data('id')
-var descripcion=button.data('descripcion')
+var categoria=button.data('nombre')
 
 var modal = $(this)
-modal.find('#id_rol').val(id)
-modal.find('#descripcion').val(descripcion)
+modal.find('#id_tipo_membresia').val(id)
+modal.find('#nombre_membresia').val(categoria)
 
 });
 
@@ -198,10 +199,10 @@ $(document).ready(function() {
 $('#deleteModal').on('show.bs.modal', function (event) {
  var button = $(event.relatedTarget)
  var id = button.data('id')
- var descripcion=button.data('descripcion')
+ var categoria=button.data('nombre')
  var modal = $(this)
- modal.find('.col-form-label').text('¿Esta seguro que desea eliminar el registro: ' +descripcion+'?')
- document.forms[0].id_rol.value=id
+ modal.find('.col-form-label').text('¿Esta seguro que desea eliminar el registro: ' +categoria+'?')
+ document.forms[0].id_tipo_membresia.value=id
 });
 
 </script>
