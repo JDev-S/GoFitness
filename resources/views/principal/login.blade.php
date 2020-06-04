@@ -19,7 +19,7 @@
 
 
 
-		<h2>Logueate</h2>
+		<h2>Iniciar sesión</h2>
 
 		<form class="woocommerce-form woocommerce-form-login login" method="post">
 

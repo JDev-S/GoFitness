@@ -44,3 +44,17 @@ Route::get('/videos_demostrativos', function () {
 Route::get('/registrarse', function () {
     return view('/principal/registrarse');
 });
+
+
+/*Admin en Rol*/
+Route::get('/Admin_rol','RolController@roles_mostrar');
+
+
+Route::get('/Admin_rol_eliminar','RolController@rol_eliminar');
+Route::post('/Admin_rol_eliminar','RolController@eliminar');
+
+Route::get('/Admin_rol_nuevo','RolController@rol_nuevo');
+Route::post('/Admin_rol_nuevo','RolController@insertar');
+
+Route::get('/Admin_rol_editar','RolController@rol_editar');
+Route::post('/Admin_rol_editar','RolController@actualizar');

@@ -5,19 +5,19 @@
 
                 <div id="slider">
                     <div id="layerslider_5" class="ls-wp-container" style="width:100%;height:655px;margin:0 auto;margin-bottom: 0px;">
-                        <div class="ls-slide" data-ls="slidedelay:8000; transition2d: all;"><img src="/images/blank.gif" data-src="/images/slider1-bg.jpg" class="ls-bg" alt="Slide background" /><img class="ls-l" style="top:195px;left:455px;white-space: nowrap;" data-ls="offsetxin:0;durationin:1500;delayin:1000;rotatexin:30;rotateyin:30;transformoriginin:right 50% 0;" src="/images/blank.gif" data-src="images/enroll-text.png" alt=""><img class="ls-l" style="top:245px;left:455px;white-space: nowrap;" data-ls="delayin:1500;skewyin:30;" src="/images/blank.gif" data-src="/images/fitness-text.png" alt="">
-                            <div class="ls-l" style="top:325px;left:455px;font-family: Roboto Condensed; font-size:20px; font-weight:500; color: #fff;white-space: nowrap;" data-ls="delayin:2000;"><i style="padding-right:12px;" class="fa fa-desktop"></i>3 Home Page Design</div>
-                            <div class="ls-l" style="top:325px;left:710px;font-family: Roboto Condensed; font-size:20px; font-weight:500; color: #fff;white-space: nowrap;" data-ls="delayin:2500;"><i style="padding-right:12px" class="fa fa-cogs"></i>Tons of Shortcode Elements</div>
-                            <div class="ls-l" style="top:375px;left:455px;font-family: Roboto Condensed; font-size:20px; font-weight:500; color: #fff;white-space: nowrap;" data-ls="delayin:3000;"><i style="padding-right:12px;" class="fa fa-bars"></i>Mega-Menu Support</div>
-                            <div class="ls-l" style="top:375px;left:710px;font-family: Roboto Condensed; font-size:20px; font-weight:500; color: #fff;white-space: nowrap;" data-ls="delayin:3500;"><i style="padding-right:12px" class="fa fa-image"></i>Multiple Gallery Options</div>
-                            <div class="ls-l" style="top:425px;left:455px;font-family: Roboto Condensed; font-size:20px; font-weight:500; color: #fff;white-space: nowrap;" data-ls="delayin:4000;"><i style="padding-right:12px;" class="fa fa-newspaper-o"></i>Multiple Blog Options</div>
+                        <div class="ls-slide" data-ls="slidedelay:8000; transition2d: all;"><img src="/images/blank.gif" data-src="/images/slider1-bg.jpg" class="ls-bg" alt="Slide background" /><img class="ls-l" style="top:195px;left:455px;white-space: nowrap;" data-ls="offsetxin:0;durationin:1500;delayin:1000;rotatexin:30;rotateyin:30;transformoriginin:right 50% 0;" src="/images/blank.gif" data-src="images/enroll-text.png" alt=""><img class="ls-l" style="top:245px;left:455px;white-space: nowrap;" data-ls="delayin:1500;skewyin:30;" src="/images/blank.gif" data-src="/images/enroll-text.png" alt="">
+                            <div class="ls-l" style="top:325px;left:455px;font-family: Roboto Condensed; font-size:20px; font-weight:500; color: #fff;white-space: nowrap;" data-ls="delayin:2000;"><i style="padding-right:12px;" class="fa fa-desktop"></i>3 Home </div>
+                            <div class="ls-l" style="top:325px;left:710px;font-family: Roboto Condensed; font-size:20px; font-weight:500; color: #fff;white-space: nowrap;" data-ls="delayin:2500;"><i style="padding-right:12px" class="fa fa-cogs"></i> Elements</div>
+                            <div class="ls-l" style="top:375px;left:455px;font-family: Roboto Condensed; font-size:20px; font-weight:500; color: #fff;white-space: nowrap;" data-ls="delayin:3000;"><i style="padding-right:12px;" class="fa fa-bars"></i> Support</div>
+                            <div class="ls-l" style="top:375px;left:710px;font-family: Roboto Condensed; font-size:20px; font-weight:500; color: #fff;white-space: nowrap;" data-ls="delayin:3500;"><i style="padding-right:12px" class="fa fa-image"></i>Multiple Gallery </div>
+                            <div class="ls-l" style="top:425px;left:455px;font-family: Roboto Condensed; font-size:20px; font-weight:500; color: #fff;white-space: nowrap;" data-ls="delayin:4000;"><i style="padding-right:12px;" class="fa fa-newspaper-o"></i>Multiple Blog </div>
                             <div class="ls-l" style="top:425px;left:710px;font-family: Roboto Condensed; font-size:20px; font-weight:500; color: #fff;white-space: nowrap;" data-ls="delayin:4500;"><i style="padding-right:12px" class="fa fa-calculator"></i>BMI Calculator Included</div>
                         </div>
                         <div class="ls-slide" data-ls="slidedelay:7000; transition2d: all;"><img src="/images/blank.gif" data-src="/images/slider2-bg.jpg" class="ls-bg" alt="Slide background" /><img class="ls-l" style="top:1px;left:0px;white-space: nowrap;" data-ls="offsetxin:-300;durationin:2000;delayin:1000;" src="/images/blank.gif" data-src="/images/man.png" alt="">
                             <div class="ls-l" id="slider2-content5" style="top:312px;left:875px;font-family: Roboto Condensed; font-size:20px; font-weight:300; color: #fff;" data-ls="offsetxin:0;offsetyin:-200;durationin:2000;delayin:4000;offsetxout:0;"><span style="width:250px; display:table-cell; vertical-align:middle; height:56px; border-bottom: solid 1px #fff; padding-bottom:20px;"><i style="width: 56px; height: 56px; background: #fff; display:inline-block; color:#0d1016; font-size:24px; margin-right:29px; line-height:56px; text-align:center" class="fa fa-file-text"></i>
                             <p style="display:inline-block; width:160px; line-height:26px; vertical-align:middle; font-size:20px; margin-bottom:0px;">Workout &amp; Packages Included</p>
                             </span> </div>
-                            <p class="ls-l" style="top:130px;left:595px;font-family:'Roboto Condensed', sans-serif; font-size:34px; line-height:50px; text-transform:uppercase; font-weight:700; color:#fff; border-bottom: 3px solid;" data-ls="durationin:2000;delayin:2000;skewxin:80;">Amazing Fitness Theme Features</p>
+                            <p class="ls-l" style="top:130px;left:595px;font-family:'Roboto Condensed', sans-serif; font-size:34px; line-height:50px; text-transform:uppercase; font-weight:700; color:#fff; border-bottom: 3px solid;" data-ls="durationin:2000;delayin:2000;skewxin:80;">Amazing Fitness</p>
                             <div class="ls-l" id="slider2-content2" style="top:312px;left:595px;font-family: Roboto Condensed; font-size:20px; font-weight:300; color: #fff;" data-ls="offsetxin:0;offsetyin:200;durationin:2000;delayin:3500;offsetxout:0;"><span style="width:250px; display:table-cell; vertical-align:middle; height:56px; border-bottom: solid 1px #fff; padding-bottom:20px;"><i style="width: 56px; height: 56px; background: #fff; display:inline-block; color:#0d1016; margin-right:29px; line-height:56px; text-align:center;" class="fa fa-image"></i>
                             <p style="display:inline-block; width:160px; line-height:26px; vertical-align:middle; margin-bottom:0px;">Amazing Premium Sliders</p>
                             </span> </div>
@@ -25,7 +25,7 @@
                             <p style="display:inline-block; width:160px; line-height:26px; vertical-align:middle; margin-bottom:0px;">2 Contact Layouts</p>
                             </span> </div>
                             <div class="ls-l" id="slider2-content4" style="top:215px;left:873px;font-family: Roboto Condensed; font-size:20px; font-weight:300; color: #fff;" data-ls="durationin:2000;delayin:3000;offsetxout:0;"><span style="width:250px; display:table-cell; vertical-align:middle; height:56px; border-bottom: solid 1px #fff; padding-bottom:20px;"><i style="width: 56px; height: 56px; background: #fff; display:inline-block; color:#0d1016; font-size:24px; margin-right:29px; line-height:56px; text-align:center" class="fa fa-html5"></i>
-                            <p style="display:inline-block; width:160px; line-height:26px; vertical-align:middle; font-size:20px; margin-bottom:0px;">Valid HTML &amp; CSS3</p>
+                            <p style="display:inline-block; width:160px; line-height:26px; vertical-align:middle; font-size:20px; margin-bottom:0px;"> &amp; </p>
                             </span> </div>
                             <div class="ls-l" id="slider2-content1" style="top:215px;left:595px;font-family: Roboto Condensed; font-size:20px; font-weight:300; color: #fff;" data-ls="offsetxin:-80;durationin:2000;delayin:2500;offsetxout:0;"><span style="width:250px; display:table-cell; vertical-align:middle; height:56px; border-bottom: solid 1px #fff; padding-bottom:20px;"><i style="width: 56px; height: 56px; background: #fff; display:inline-block; color:#0d1016; margin-right:29px; line-height:56px; text-align:center" class="fa fa-bolt"></i>
                             <p style="display:inline-block; width:160px; line-height:26px; vertical-align:middle; margin-bottom:0px;">Cutting Edge Technology</p>
@@ -36,7 +36,7 @@
                         </div>
                         <div class="ls-slide" data-ls="slidedelay:8000; transition2d: all;"><img src="/images/blank.gif" data-src="/images/slider3-bg.jpg" class="ls-bg" alt="Slide background" /><img class="ls-l" style="top:25px;left:-3px;white-space: nowrap;" data-ls="offsetxin:-200;offsetyin:400;durationin:2000;delayin:1000;rotateyin:60;scalexin:0.7;scaleyin:0.7;transformoriginin:center center 0;" src="/images/blank.gif" data-src="/images/guy-running.png" alt="">
                             <h4 class="ls-l" style="top:218px;left:616px;font-family:'Open Sans Condensed', sans-serif; font-size:54px; line-height:50px; text-transform:uppercase; font-weight:bold; color:#9bb70d; width:445px;" data-ls="offsetxin:300;durationin:2000;delayin:2000;rotatexin:200;">Heck of a body like Adonis</h4>
-                            <h2 class="ls-l" style="top:348px;left:616px;font-family:'Open Sans', sans-serif;width:472px;font-size:14px;line-height:26px;color:#f4f4f4;" data-ls="offsetxin:0;offsetyin:100;durationin:2000;delayin:3000;skewxin:-80;skewyin:-80;scalexin:0.5;">Fitness Zone is a complete sports/fitness theme that is suitable for any one who is about to start a Fitness Center or a Sports Website. Have a look and enjoy the Exclusive Features of a Fitness Website.</h2>
+                            <h2 class="ls-l" style="top:348px;left:616px;font-family:'Open Sans', sans-serif;width:472px;font-size:14px;line-height:26px;color:#f4f4f4;" data-ls="offsetxin:0;offsetyin:100;durationin:2000;delayin:3000;skewxin:-80;skewyin:-80;scalexin:0.5;">Fitness Zone is a complete sports/fitness  that is suitable for any one who is about to start a Fitness Center or a Sports Website. Have a look and enjoy the Exclusive Features of a Fitness Website.</h2>
                             <p class="ls-l" style="top:460px;left:616px;background-image:url(/images/button-bg-medium.png); padding:13px 26px; font-family:'Open Sans Condensed', sans-serif; font-size:16px; background-repeat: no-repeat; background-color:#9bb70d; color: #ffffff; cursor: pointer; display: inline-block; font-weight: bold; line-height: normal; position: relative; text-transform: uppercase; z-index: 1;white-space: nowrap;" data-ls="offsetxin:-80;durationin:2000;delayin:4000;rotatein:270;"><a href="#" class="banner-link" style="color:#ffffff;">Enroll Now</a></p>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                                                     <span class="fa fa-tint"> </span>
                                                 </div>
                                                 <h3>Apóyate con los profesionales.</h3>
-                                                <p>Color your fitness theme anyway</p>
+                                                <p>Color your fitness  anyway</p>
                                             </div>
 										</li>
                                         <li>                                            
@@ -91,7 +91,7 @@
                                                     <span class="fa fa-gears"> </span>
                                                 </div>
                                                 <h3>Entrena a la hora que más se te acomode.</h3>
-                                                <p>Make your theme work this way!</p>
+                                                <p>Make your  work this way!</p>
                                             </div>
 										</li>
                                     </ul>
@@ -399,7 +399,7 @@
                         <div class="fullwidth-section full-man">
                             <div class="container">
                             	<div class="dt-sc-one-half column first animate" data-animation="fadeInUp" data-delay="100">
-                                	<h3 class="section-title">Tienes Dudas? Preguntale a un experto del fitness</h3>
+                                	<h3 class="section-title">Tienes Dudas? Pregúntale a un experto del fitness</h3>
                                     <div id="ajax_contact_msg"></div>
                                     <form name="frmcontact" action="php/send.php" method="post" id="contact-form">
                                     	<div class="dt-sc-one-half column first">
