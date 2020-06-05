@@ -9,7 +9,7 @@ class MembresiaController extends Controller
 {
     public function membresias_mostrar()
 	{
-		$membresias=DB::select('select * from membresias inner join periodo_suscripcion on membresia.id_periodo=permisos_suscripcion.id_periodo inner join tipo_membresia on tipo_membresia.id_tipo_membresia=membresia.id_tipo_membresia');
+		$membresias=DB::select('select * from membresia inner join periodo_suscripcion on membresia.id_periodo=periodo_suscripcion.id_periodo inner join tipo_memebresia on tipo_memebresia.id_tipo_membresia=membresia.id_tipo_membresia');
 		return view('/Administrador/Membresia/index',compact('membresias'));
     }
 
@@ -26,7 +26,7 @@ class MembresiaController extends Controller
         $id_tipo_membresia = $input['id_tipo_membresia'];
         $precio = $input['precio'];
         
-        $$query=DB::insert('insert into membresia (id_membresia,id_periodo,id_tipo_membresia,precio) values ( ?, ?, ?, ?)', [null, $id_periodo, $id_tipo_membresia, $precio]);
+        $query=DB::insert('insert into membresia (id_membresia,id_periodo,id_tipo_membresia,precio) values ( ?, ?, ?, ?)', [null, $id_periodo, $id_tipo_membresia, $precio]);
         return redirect()->action('MembresiaController@membresias_mostrar')->withInput();
 	}
 

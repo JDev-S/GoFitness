@@ -119,3 +119,57 @@ Route::post('/Admin_descripcion_membresia_nuevo','Descripcion_membresiaControlle
 Route::post('/Admin_descripcion_membresia_editar','Descripcion_membresiaController@actualizar');
 
 Route::get('/video_buscar','VideoController@busqueda')->name('demostrativos_buscar');
+
+/*CRUD Ejercicios rutina*/
+Route::get('/Admin_ejercicios_rutina','Ejercicios_rutinaController@ejercicios_rutina_mostrar');
+
+Route::post('/Admin_ejercicios_rutina_eliminar','Ejercicios_rutinaController@eliminar');
+
+Route::post('/Admin_ejercicios_rutina_nuevo','Ejercicios_rutinaController@insertar');
+
+Route::post('/Admin_ejercicios_rutina_editar','Ejercicios_rutinaController@actualizar');
+
+/*CRUD Permisos rutina*/
+Route::get('/Admin_permisos_rutina','Permisos_rutinaController@permisos_rutina_mostrar');
+
+Route::post('/Admin_permisos_rutina_eliminar','Permisos_rutinaController@eliminar');
+
+Route::post('/Admin_permisos_rutina_nuevo','Permisos_rutinaController@insertar');
+
+Route::post('/Admin_permisos_rutina_editar','Permisos_rutinaController@actualizar');
+
+/*CRUD Usuario*/
+Route::get('/Admin_usuario','UsuarioController@usuarios_mostrar');
+
+Route::post('/Admin_usuario_eliminar','UsuarioController@eliminar');
+
+Route::post('/Admin_usuario_nuevo','UsuarioController@insertar');
+
+Route::post('/Admin_usuario_editar','UsuarioController@actualizar');
+
+/*CRUD Noticias*/
+Route::get('/Admin_noticias','NoticiasController@noticias_mostrar');
+
+Route::post('/Admin_noticias_eliminar','NoticiasController@eliminar');
+
+Route::post('/Admin_noticias_nuevo','NoticiasController@insertar');
+
+Route::post('/Admin_noticias_editar','NoticiasController@actualizar');
+
+/*CRUD periodo_suscripcion*/
+Route::get('/Admin_periodo_suscripcion','Periodo_suscripcionController@periodos_suscripcion_mostrar');
+
+Route::post('/Admin_periodo_suscripcion_eliminar','Periodo_suscripcionController@eliminar');
+
+Route::post('/Admin_periodo_suscripcion_nuevo','Periodo_suscripcionController@insertar');
+
+Route::post('/Admin_periodo_suscripcion_editar','Periodo_suscripcionController@actualizar');
+
+/*CRUD miembros_suscritos*/
+Route::get('/Admin_miembros_suscritos','Miembros_suscritosController@miembros_suscritos_mostrar');
+
+Route::post('/Admin_miembros_suscritos_eliminar','Miembros_suscritosController@eliminar');
+
+Route::post('/Admin_miembros_suscritos_nuevo','Miembros_suscritosController@insertar');
+
+Route::post('/Admin_miembros_suscritos_editar','Miembros_suscritosController@actualizar');

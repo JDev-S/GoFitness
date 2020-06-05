@@ -9,7 +9,7 @@ class Descripcion_membresiaController extends Controller
 {
     public function descripciones_membresia_mostrar()
 	{
-		$descripcion_membresia=DB::select('select * from descripcion_membresia inner join tipo_membresia on tipo_membresia.id_tipo_membresia=descripcion_membresia');
+		$descripciones_membresia=DB::select('select * from descripcion_membresia inner join tipo_memebresia on tipo_memebresia.id_tipo_membresia=descripcion_membresia.id_tipo_membresia');
 		return view('/Administrador/Descripcion_membresia/index',compact('descripciones_membresia'));
     }
 
