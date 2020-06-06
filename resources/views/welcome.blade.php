@@ -57,6 +57,7 @@
  		stickynav : 'enable'
 	};
 	</script>
+    @yield('head')
     </head>
 <body>
 	<div id="loader-wrapper">

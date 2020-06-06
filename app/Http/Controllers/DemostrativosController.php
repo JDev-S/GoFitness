@@ -7,6 +7,24 @@ use DB;
 
 class DemostrativosController extends Controller
 {
+    public function mostrar_videos($pagina=1)
+    {
+        $numero_videos=DB::select('select count(*)as numero_videos from demostrativos');
+        if($pagina<=0)
+        {
+            $pagina=1;
+        }
+        $valor=($pagina*15)-15;
+        $categorias=DB::select("select * from categoria");
+        
+        $noticias=DB::select("select * from noticias");
+        
+        $videos_demostrativos=DB::select("select demostrativos.id_demostrativo,video.id_video,categoria.id_categoria,video.nombre_video,video.video_youtube,video.descripcion,categoria.nombre_categoria from demostrativos inner join video on video.id_video=demostrativos.id_demostrativo inner join categoria on categoria.id_categoria=video.id_categoria order by demostrativos.id_demostrativo LIMIT $valor,15");
+        
+		return view('/principal/videos_demostrativos',compact('videos_demostrativos','categorias','noticias','numero_videos','pagina'));
+    }
+    
+    
     public function demostrativos_mostrar()
 	{
 		$demostrativos=DB::select('select * from demostrativos inner join video on demostrativos.id_demostrativo=video.id_video inner join categoria on categoria.id_categoria=video.id_categoria');

@@ -37,9 +37,8 @@ Route::get('/plan_fitness', function () {
     return view('/principal/plan_fitness');
 });
 
-Route::get('/videos_demostrativos', function () {
-    return view('/principal/videos_demostrativos');
-});
+
+Route::get('/videos_demostrativos/{pagina?}','DemostrativosController@mostrar_videos');
 
 Route::get('/registrarse', function () {
     return view('/principal/registrarse');
