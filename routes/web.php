@@ -173,3 +173,21 @@ Route::post('/Admin_miembros_suscritos_eliminar','Miembros_suscritosController@e
 Route::post('/Admin_miembros_suscritos_nuevo','Miembros_suscritosController@insertar');
 
 Route::post('/Admin_miembros_suscritos_editar','Miembros_suscritosController@actualizar');
+
+/*CRUD cliente*/
+Route::get('/Admin_clientes','ClienteController@clientes_mostrar');
+
+Route::post('/Admin_clientes_eliminar','ClienteController@eliminar');
+
+Route::post('/Admin_clientes_nuevo','ClienteController@insertar');
+
+Route::post('/Admin_clientes_editar','ClienteController@actualizar');
+
+/*CRUD Instructor*/
+Route::get('/Admin_instructor','InstructorController@instructores_mostrar');
+
+Route::post('/Admin_instructor_eliminar','InstructorController@eliminar');
+
+Route::post('/Admin_instructor_nuevo','InstructorController@insertar');
+
+Route::post('/Admin_instructor_editar','InstructorController@actualizar');
