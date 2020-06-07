@@ -67,4 +67,15 @@ class RutinaController extends Controller
         $query2=DB::update("update rutina set equipamiento='$equipamiento', musculos_trabajar='$musculos_trabajar', id_instructor='$id_instructor' where id_rutina=?",[$id_rutina]);
         return redirect()->action('RutinaController@rutinas_mostrar')->withInput();
 	}
+    
+        public function mostrar_clase_rutina()
+    {
+            
+        $id_rutina=$_GET['buscar'];
+            
+        $rutinas=DB::select('select * from video inner join rutina on rutina.id_rutina=video.id_video inner join instructor on instructor.id_instructor=rutina.id_instructor inner join ejercicios_rutina on ejercicios_rutina.id_rutina=rutina.id_rutina inner join categoria on categoria.id_categoria=video.id_categoria inner join usuario on usuario.id_usuario=instructor.id_instructor where rutina.id_rutina='.$id_rutina);
+        $num=DB::select('select count(*)as numero from ejercicios_rutina where id_rutina='.$id_rutina);  
+		return view('/principal/clases',compact('rutinas','num'));
+        
+    }
 }

@@ -21,9 +21,7 @@ Route::get('/acerca_de', function () {
     return view('/principal/acerca');
 });
 
-Route::get('/clases', function () {
-    return view('/principal/clases');
-});
+Route::get('/clases','RutinaController@mostrar_clase_rutina');
 
 Route::get('/contacto', function () {
     return view('/principal/contacto');
@@ -38,13 +36,15 @@ Route::get('/plan_fitness', function () {
 });
 
 
+Route::get('/videos_rutinas/{pagina?}','Ejercicios_rutinaController@mostrar_videos');
+
 Route::get('/videos_demostrativos/{pagina?}','DemostrativosController@mostrar_videos');
 
 Route::get('/registrarse', function () {
     return view('/principal/registrarse');
 });
 
-
+//---------------------------------------CRUD ADMINISTRADOR-----------------------------------------
 /*CRUD Rol*/
 Route::get('/Admin_rol','RolController@roles_mostrar');
 

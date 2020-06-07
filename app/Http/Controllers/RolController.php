@@ -59,11 +59,13 @@ class RolController extends Controller
 		    $id=$input['id_rol'];
             $descripcion = $input['descripcion'];
 
-                 
-
                 $query=DB::update("update rol set descripcion='$descripcion' where id_rol=?",[$id]);
         return redirect()->action('RolController@roles_mostrar')->withInput();
            
-
 	}
+    
+
+    
+    
+    
 }
