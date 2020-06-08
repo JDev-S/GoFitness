@@ -40,18 +40,24 @@
 
                       </div><p>{{$rutinas[0]->descripcion_video}}.</p>
 <div class="dt-sc-hr-invisible-small  "></div>
-<h3 class="border-title "><span>Detalle de cada ejercicio de la rutina</span></h3>
-
+<h3 class="border-title "><span>Detalle de cada ejercicio de la rutina</span></h3>                  
+                      
 <?php
   $i=1;
-foreach($rutinas as $rutina) 
+if (empty($ejercicios))
+{}
+else                      
 {
-echo '<div class="dt-excersise-title title"><p class="count"><a href="javascript:void(0)">'.$i.' <br><span>paso</span></a></p><h5><a href="javascript:void(0)">'.$rutina->nombre_ejercicio.'</a></h5></div><p>'.$rutina->descripcion.'</p><div class="dt-sc-hr-invisible-small"></div>';
-    $i++;
- }
+    
+
+    foreach($ejercicios as $rutina) 
+    {
+    echo '<div class="dt-excersise-title title"><p class="count"><a href="javascript:void(0)">'.$i.' <br><span>paso</span></a></p><h5><a href="javascript:void(0)">'.$rutina->nombre_ejercicio.'</a></h5></div><p>'.$rutina->descripcion.'</p><div class="dt-sc-hr-invisible-small"></div>';
+        $i++;
+     }
+}
 ?>
                                           
-
                       <div class="dt-sc-hr-invisible"></div>
                       <div class="dt-sc-clear"></div>
 
@@ -62,22 +68,27 @@ echo '<div class="dt-excersise-title title"><p class="count"><a href="javascript
                                       <section class="secondary-sidebar secondary-has-right-sidebar" id="secondary-right"><aside id="my_recent_workouts-2" class="widget widget_recent_workouts"><div class="widgettitle"><h3>Ejercicios de la rutina</h3></div>
                                           <?php
                                           $i=1;
-                                          foreach($rutinas as $rutina) 
-{
-                                          echo'<div class="recent-workout-widget"><div class="dt-excersise-entry"><div class="dt-excersise-title title"><p class="count"><a href="javascript:void(0)">'.$i.' <br><span>paso</span></a></p><h5><a href="https://fitnesszonewp.wpengine.com/dt_workouts/dumbbell-press-bride-on-bosu/">'.$rutina->nombre_ejercicio.'</a></h5></div></div></div>';
-                                          $i++;
+                                          if (empty($ejercicios))
+                                          {}
+                                          else 
+                                          {
+                                                foreach($ejercicios as $rutina) 
+                                                {
+                                                  echo'<div class="recent-workout-widget"><div class="dt-excersise-entry"><div class="dt-excersise-title title"><p class="count"><a href="javascript:void(0)">'.$i.' <br><span>paso</span></a></p><h5><a href="https://fitnesszonewp.wpengine.com/dt_workouts/dumbbell-press-bride-on-bosu/">'.$rutina->nombre_ejercicio.'</a></h5></div></div></div>';
+                                                  $i++;
+                                                }
                                           }
+                                       
                                           ?>
                                           
                                           </aside>
                                          
                                           <aside id="text-5" class="widget widget_text"><div class="widgettitle"><h3>Ultimas rutinas</h3></div>			<div class="textwidget"><ul class="quick_links">
-                                    <li><a href="#">Additional Support Links</a></li>
-                                    <li><a href="#">Knowledge Base</a></li>
-                                    <li><a href="#">Pricing and features</a></li>
-                                    <li><a href="#">Change payment information</a></li>
-                                    <li><a href="#">Cancel your account</a></li>
-                                    <li><a href="#">Visit our support page</a></li>
+                                    @foreach($nombres as $nombre)              
+                                    
+                                        <li><a href='/clases?buscar={{$nombre->id_rutina}}'>{{$nombre->nombre_video}}</a></li>
+                                    
+                                              @endforeach
                                 </ul></div>
 		</aside></section>
                   

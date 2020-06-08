@@ -51,7 +51,7 @@ class Ejercicios_rutinaController extends Controller
         
         $noticias=DB::select("select * from noticias");
         
-        $videos_rutinas=DB::select("select rutina.id_rutina,rutina.equipamiento,rutina.musculos_trabajar,rutina.id_instructor,categoria.id_categoria,video.nombre_video,video.video_youtube,video.descripcion,categoria.nombre_categoria, usuario.nombre from rutina inner join video on video.id_video=rutina.id_rutina inner join categoria on categoria.id_categoria=video.id_categoria inner join instructor on instructor.id_instructor=rutina.id_instructor inner join usuario on usuario.id_usuario=instructor.id_instructor order by rutina.id_rutina LIMIT $valor,15");
+        $videos_rutinas=DB::select("select rutina.id_rutina,rutina.equipamiento,rutina.musculos_trabajar,rutina.id_instructor,categoria.id_categoria,video.nombre_video,video.video_youtube,video.descripcion_video,categoria.nombre_categoria, usuario.nombre from rutina inner join video on video.id_video=rutina.id_rutina inner join categoria on categoria.id_categoria=video.id_categoria inner join instructor on instructor.id_instructor=rutina.id_instructor inner join usuario on usuario.id_usuario=instructor.id_instructor order by rutina.id_rutina LIMIT $valor,15");
         
 		return view('/principal/rutinas',compact('videos_rutinas','categorias','noticias','numero_videos','pagina'));
     }

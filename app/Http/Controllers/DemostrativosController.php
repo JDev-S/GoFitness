@@ -19,7 +19,7 @@ class DemostrativosController extends Controller
         
         $noticias=DB::select("select * from noticias");
         
-        $videos_demostrativos=DB::select("select demostrativos.id_demostrativo,video.id_video,categoria.id_categoria,video.nombre_video,video.video_youtube,video.descripcion,categoria.nombre_categoria from demostrativos inner join video on video.id_video=demostrativos.id_demostrativo inner join categoria on categoria.id_categoria=video.id_categoria order by demostrativos.id_demostrativo LIMIT $valor,15");
+        $videos_demostrativos=DB::select("select demostrativos.id_demostrativo,video.id_video,categoria.id_categoria,video.nombre_video,video.video_youtube,video.descripcion_video,categoria.nombre_categoria from demostrativos inner join video on video.id_video=demostrativos.id_demostrativo inner join categoria on categoria.id_categoria=video.id_categoria order by demostrativos.id_demostrativo LIMIT $valor,15");
         
 		return view('/principal/videos_demostrativos',compact('videos_demostrativos','categorias','noticias','numero_videos','pagina'));
     }
@@ -57,7 +57,7 @@ class DemostrativosController extends Controller
         $video_youtube = $input['video_youtube'];
         $descripcion = $input['descripcion'];
 
-        $query=DB::insert('insert into video (id_video,id_categoria,nombre_video,video_youtube,descripcion) values ( ?, ?,?,?,?)', [null, $id_categoria,$nombre_video,$video_youtube,$descripcion]);
+        $query=DB::insert('insert into video (id_video,id_categoria,nombre_video,video_youtube,descripcion_video) values ( ?, ?,?,?,?)', [null, $id_categoria,$nombre_video,$video_youtube,$descripcion]);
         
         
         /*INSERTAR EN TABLA DEMOSTRATIVOS*/
@@ -77,7 +77,7 @@ class DemostrativosController extends Controller
         $video_youtube = $input['video_youtube'];
         $descripcion = $input['descripcion'];
         
-        $query=DB::update("update video set id_categoria='$id_categoria', nombre_video='$nombre_video', video_youtube='$video_youtube', descripcion='$descripcion' where id_video=?",[$id_demostrativo]);
+        $query=DB::update("update video set id_categoria='$id_categoria', nombre_video='$nombre_video', video_youtube='$video_youtube', descripcion_video='$descripcion' where id_video=?",[$id_demostrativo]);
         return redirect()->action('DemostrativosController@demostrativos_mostrar')->withInput();
 	}
 }

@@ -40,7 +40,7 @@ class RutinaController extends Controller
         $equipamiento = $input['equipamiento'];
         $musculos_trabajar = $input['musculos_trabajar'];
         $id_instructor = $input['id_instructor'];
-        $query=DB::insert('insert into video (id_video,id_categoria,nombre_video,video_youtube,descripcion) values ( ?, ?,?,?,?)', [null, $id_categoria,$nombre_video,$video_youtube,$descripcion]);
+        $query=DB::insert('insert into video (id_video,id_categoria,nombre_video,video_youtube,descripcion_video) values ( ?, ?,?,?,?)', [null, $id_categoria,$nombre_video,$video_youtube,$descripcion]);
         
         
         /*INSERTAR EN TABLA RUTINA*/
@@ -62,7 +62,7 @@ class RutinaController extends Controller
        echo $musculos_trabajar=$input['musculos_trabajar']."\n"; 
        echo $id_instructor=$input['id_instructor']."\n"; 
        
-        $query=DB::update("update video set id_categoria='$id_categoria', nombre_video='$nombre_video', video_youtube='$video_youtube', descripcion='$descripcion' where id_video=?",[$id_rutina]);
+        $query=DB::update("update video set id_categoria='$id_categoria', nombre_video='$nombre_video', video_youtube='$video_youtube', descripcion_video='$descripcion' where id_video=?",[$id_rutina]);
          die();
         $query2=DB::update("update rutina set equipamiento='$equipamiento', musculos_trabajar='$musculos_trabajar', id_instructor='$id_instructor' where id_rutina=?",[$id_rutina]);
         return redirect()->action('RutinaController@rutinas_mostrar')->withInput();
@@ -73,9 +73,14 @@ class RutinaController extends Controller
             
         $id_rutina=$_GET['buscar'];
             
-        $rutinas=DB::select('select * from video inner join rutina on rutina.id_rutina=video.id_video inner join instructor on instructor.id_instructor=rutina.id_instructor inner join ejercicios_rutina on ejercicios_rutina.id_rutina=rutina.id_rutina inner join categoria on categoria.id_categoria=video.id_categoria inner join usuario on usuario.id_usuario=instructor.id_instructor where rutina.id_rutina='.$id_rutina);
+        $rutinas=DB::select('select * from video inner join rutina on rutina.id_rutina=video.id_video inner join instructor on instructor.id_instructor=rutina.id_instructor inner join categoria on categoria.id_categoria=video.id_categoria inner join usuario on usuario.id_usuario=instructor.id_instructor where rutina.id_rutina='.$id_rutina);
         $num=DB::select('select count(*)as numero from ejercicios_rutina where id_rutina='.$id_rutina);  
-		return view('/principal/clases',compact('rutinas','num'));
+            
+        $nombres=DB::select('select * from video inner join rutina on video.id_video=rutina.id_rutina order by id_rutina desc limit 6');
+            
+        $ejercicios=DB::select('select * from rutina inner join video on video.id_video=rutina.id_rutina inner join ejercicios_rutina on ejercicios_rutina.id_rutina=rutina.id_rutina where rutina.id_rutina='.$id_rutina);
+           
+		return view('/principal/clases',compact('rutinas','num','nombres','ejercicios'));
         
     }
 }

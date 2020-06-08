@@ -45,6 +45,18 @@
                     	<div class="dt-sc-hr-invisible"></div>
                         <div class="dt-sc-hr-invisible-small"></div>
                         <section id="secondary-left" class="secondary-sidebar secondary-has-left-sidebar">
+                            
+                            <aside class="widget widget_search">
+                                <div class="widgettitle">
+	                                <h3>Buscar</h3>
+                                    <span></span>
+                                </div>
+                                <form action="#" id="searchform" method="get">
+                                    <input type="text" placeholder="Escribe la categoria" class="text_input" value="" name="s" id="s">
+                                    <input type="submit" value="Buscar" name="submit" class="dt-sc-button small">
+                                </form>
+                            </aside>
+                            
                             <aside class="widget widget_popular_entries">
                                 <div class="widgettitle">
 	                                <h3>Noticias</h3>
@@ -63,22 +75,14 @@
                                     </ul>
                                 </div>
                             </aside>
-                            <aside class="widget widget_search">
-                                <div class="widgettitle">
-	                                <h3>Search</h3>
-                                    <span></span>
-                                </div>
-                                <form action="#" id="searchform" method="get">
-                                    <input type="text" placeholder="Enter Keyword" class="text_input" value="" name="s" id="s">
-                                    <input type="submit" value="submit" name="submit" class="dt-sc-button small">
-                                </form>
-                            </aside>
+                            
 
                         </section>
                         <section id="primary" class="page-with-sidebar page-with-left-sidebar">
                             <div class="dt-sc-sorting-container">
+                                 <a class="first active-sort" data-filter="*" href="/videos_demostrativos">Todas las categorias</a>
                                 @foreach($categorias as $categoria)
-                                <a class="first active-sort" data-filter="*" href="#">{{$categoria->nombre_categoria}}</a>
+                                <a  data-filter="*" href="#">{{$categoria->nombre_categoria}}</a>
                                
                                 @endforeach
                             </div>
