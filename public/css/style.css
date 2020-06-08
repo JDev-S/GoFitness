@@ -47,7 +47,7 @@
 
 /*----*****---- << 1. General >> ----*****----*/
 	
-	body { font-weight:300; font-size:14px; line-height:28px; background:#ffffff; color:#6a695e; }
+	body { font-weight:300; font-size:14px;  background:#ffffff; color:#6a695e; }
 	*{ -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
 	
 	/*----*****---- << 01. Fonts >> ----*****----*/

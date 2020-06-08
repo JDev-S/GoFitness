@@ -81,8 +81,10 @@
                                 <nav id="main-menu">
                                     <ul id="menu-main-menu" class="menu">
                                         <li class="menu-item-simple-parent menu-item-depth-0 current_page_item"><a href="/"> <i class="fa fa-home fa-1x"></i> Inicio</a></li>
-                                        <li class="menu-item-megamenu-parent  megamenu-4-columns-group menu-item-depth-0"><a href="/clases"><i class="fa fa-clock-o fa-1x"></i> Clases</a> </li>
+                                        <!--<li class="menu-item-megamenu-parent  megamenu-4-columns-group menu-item-depth-0"><a href="/clases"><i class="fa fa-clock-o fa-1x"></i> Clases</a> </li>-->
                                         <li class="menu-item-simple-parent menu-item-depth-0"><a href="/videos_demostrativos"><i class="fa fa-video-camera fa-1x"></i>Videos demostrativos</a>
+                                        </li>
+                                         <li class="menu-item-simple-parent menu-item-depth-0"><a href="/videos_rutinas"><i class="fa fa-video-camera fa-1x"></i>Rutinas</a>
                                         </li>
                                         <li class="menu-item-megamenu-parent  megamenu-4-columns-group menu-item-depth-0"> <a href="/acerca_de"> <i class="fa fa-user fa-1x"></i> Acerca de </a></li>
                                         
