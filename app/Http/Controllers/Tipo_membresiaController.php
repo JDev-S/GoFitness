@@ -106,7 +106,7 @@ class Tipo_membresiaController extends Controller
             array_push($aTipo_membresia,$oTipo_membresia);
             $oTipo_membresia = new \stdClass();
         }
-            print_r($aTipo_membresia);
+           // print_r($aTipo_membresia);
             
         
         $descripcion_membresia=DB::select('SELECT * FROM descripcion_membresia');
