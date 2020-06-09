@@ -60,30 +60,70 @@
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">
                        
-                                               <li>
-                            <a href="/Admin_contacto">
+                        <li>
+                            <a href="/Admin_clientes">
                                 <i class="fas fa-chart-bar"></i>Inicio</a>
                         </li>
                         <li>
-                            <a href="/Admin_auto">
-                                <i class="fas fa-table"></i>Autos</a>
+                            <a href="/Admin_categoria">
+                                <i class="fas fa-table"></i>Categorias</a>
                         </li>
                         <li>
-                            <a href="/Admin_especificacion">
-                                <i class="far fa-check-square"></i>Especificaciones</a>
+                            <a href="/Admin_clientes">
+                                <i class="far fa-check-square"></i>Clientes</a>
                         </li>
                         <li>
-                            <a href="/Admin_descripcion_especificacion">
-                                <i class="fas fa-calendar-alt"></i>Descripcion en especificaciones</a>
+                            <a href="/Admin_demostrativos">
+                                <i class="fas fa-calendar-alt"></i>Videos demostrativos</a>
                         </li>
                         <li>
-                            <a href="/Admin_fotos_autos">
-                                <i class="fas fa-map-marker-alt"></i>Fotos de los autos</a>
+                            <a href="/Admin_descripcion_membresia">
+                                <i class="fas fa-map-marker-alt"></i>Descripciòn de las membresias</a>
                         </li>
                         
                         <li>
-                            <a href="/Admin_horario">
-                                <i class="fas fa-map-marker-alt"></i>Horario</a>
+                            <a href="/Admin_ejercicios_rutina">
+                                <i class="fas fa-map-marker-alt"></i>Ejercicios de rutina</a>
+                        </li>
+                        
+                         <li>
+                            <a href="/Admin_instructor">
+                                <i class="fas fa-map-marker-alt"></i>Instructores</a>
+                        </li>
+                        
+                         <li>
+                            <a href="/Admin_membresia">
+                                <i class="fas fa-map-marker-alt"></i>Membresias</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/Admin_miembros_suscritos">
+                                <i class="fas fa-map-marker-alt"></i>Miembros suscriptos</a>
+                        </li>
+                        
+                         <li>
+                            <a href="/Admin_noticias">
+                                <i class="fas fa-map-marker-alt"></i>Noticias</a>
+                        </li>
+                        
+                         <li>
+                            <a href="/Admin_periodo_suscripcion">
+                                <i class="fas fa-map-marker-alt"></i>Periodos de suscripcion</a>
+                        </li>
+                        
+                         <li>
+                            <a href="/Admin_permisos_rutina">
+                                <i class="fas fa-map-marker-alt"></i>Permisos de rutinas</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/Admin_rutina">
+                                <i class="fas fa-map-marker-alt"></i>Rutinas</a>
+                        </li>
+                        
+                         <li>
+                            <a href="/Admin_tipo_membresia">
+                                <i class="fas fa-map-marker-alt"></i>Tipos de membresia</a>
                         </li>
                         
                          <li>
@@ -108,36 +148,77 @@
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
 
-                        <li>
-                            <a href="/Admin_contacto">
+                       <li>
+                            <a href="/Admin_clientes">
                                 <i class="fas fa-chart-bar"></i>Inicio</a>
                         </li>
                         <li>
-                            <a href="/Admin_auto">
-                                <i class="fas fa-table"></i>Autos</a>
+                            <a href="/Admin_categoria">
+                                <i class="fas fa-table"></i>Categorias</a>
                         </li>
                         <li>
-                            <a href="/Admin_especificacion">
-                                <i class="far fa-check-square"></i>Especificaciones</a>
+                            <a href="/Admin_clientes">
+                                <i class="far fa-check-square"></i>Clientes</a>
                         </li>
                         <li>
-                            <a href="/Admin_descripcion_especificacion">
-                                <i class="fas fa-calendar-alt"></i>Descripcion en especificaciones</a>
+                            <a href="/Admin_demostrativos">
+                                <i class="fas fa-calendar-alt"></i>Videos demostrativos</a>
                         </li>
                         <li>
-                            <a href="/Admin_fotos_autos">
-                                <i class="fas fa-map-marker-alt"></i>Fotos de los autos</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/Admin_horario">
-                                <i class="fas fa-map-marker-alt"></i>Horario</a>
+                            <a href="/Admin_descripcion_membresia">
+                                <i class="fas fa-map-marker-alt"></i>Descripciòn de las membresias</a>
                         </li>
                         
                         <li>
+                            <a href="/Admin_ejercicios_rutina">
+                                <i class="fas fa-map-marker-alt"></i>Ejercicios de rutina</a>
+                        </li>
+                        
+                         <li>
+                            <a href="/Admin_instructor">
+                                <i class="fas fa-map-marker-alt"></i>Instructores</a>
+                        </li>
+                        
+                         <li>
+                            <a href="/Admin_membresia">
+                                <i class="fas fa-map-marker-alt"></i>Membresias</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/Admin_miembros_suscritos">
+                                <i class="fas fa-map-marker-alt"></i>Miembros suscriptos</a>
+                        </li>
+                        
+                         <li>
+                            <a href="/Admin_noticias">
+                                <i class="fas fa-map-marker-alt"></i>Noticias</a>
+                        </li>
+                        
+                         <li>
+                            <a href="/Admin_periodo_suscripcion">
+                                <i class="fas fa-map-marker-alt"></i>Periodos de suscripcion</a>
+                        </li>
+                        
+                         <li>
+                            <a href="/Admin_permisos_rutina">
+                                <i class="fas fa-map-marker-alt"></i>Permisos de rutinas</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/Admin_rutina">
+                                <i class="fas fa-map-marker-alt"></i>Rutinas</a>
+                        </li>
+                        
+                         <li>
+                            <a href="/Admin_tipo_membresia">
+                                <i class="fas fa-map-marker-alt"></i>Tipos de membresia</a>
+                        </li>
+                        
+                         <li>
                             <a href="/cerrar_sesion">
                                 <i class="fas fa-map-marker-alt"></i>Cerrar sesión</a>
                         </li>
+
 
 
                     </ul>

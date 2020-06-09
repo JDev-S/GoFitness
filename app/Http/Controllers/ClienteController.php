@@ -28,7 +28,7 @@ class ClienteController extends Controller
         $correo = $input['correo'];
         $contrasenia = $input['contraseña'];
         $nombre = $input['nombre'];
-        
+        $encryptedPassword = bcrypt($contrasenia);
         $telefono = $input['telefono'];
         $direccion = $input['direccion'];
         $ciudad = $input['ciudad'];
@@ -37,14 +37,22 @@ class ClienteController extends Controller
         $estatura = $input['estatura'];
         
         /*ROLLBACK*/
+         $usuarios=DB::select("SELECT * FROM usuario where usuario.nombre_usuario='$nombre_usuario' ");
+		if (empty($usuarios))
+		{
         
-        $query=DB::insert('insert into usuario (id_usuario,id_rol,nombre_usuario,apellidos,fecha_nacimiento,correo,contraseña,nombre) values ( ?, ?, ?, ?, ?, ?, ?, ?)', [null, $id_rol, $nombre_usuario, $apellidos,$fecha_nacimiento,$correo,$contrasenia,$nombre]);
+        $query=DB::insert('insert into usuario (id_usuario,id_rol,nombre_usuario,apellidos,fecha_nacimiento,correo,contraseña,nombre) values ( ?, ?, ?, ?, ?, ?, ?, ?)', [null, $id_rol, $nombre_usuario, $apellidos,$fecha_nacimiento,$correo,$encryptedPassword,$nombre]);
         
        $id_cliente=DB::select('select id_usuario from usuario order by id_usuario desc limit 1');
         $id=$id_cliente[0]->id_usuario;
         $query2=DB::insert('insert into cliente (id_cliente,telefono,direccion,ciudad,estado,peso,estatura) values ( ?, ?, ?, ?, ?, ?, ?)', [$id, $telefono, $direccion,$ciudad,$estado,$peso,$estatura]);
         
         return redirect()->action('ClienteController@clientes_mostrar')->withInput();
+        }
+        else
+        {
+            return redirect()->action('ClienteController@clientes_mostrar')->withInput();
+        }
 	}
 
 	public function actualizar(Request $input)
@@ -65,10 +73,21 @@ class ClienteController extends Controller
         echo $peso = $input['peso'];
         echo $estatura = $input['estatura'];
         
-        
-        $query=DB::update("update usuario set id_rol='$id_rol', nombre_usuario='$nombre_usuario', apellidos='$apellidos', fecha_nacimiento='$fecha_nacimiento', correo='$correo', contraseña='$contrasenia', nombre='$nombre' where id_usuario=?",[$id_usuario]);
+        $query5=DB::select("SELECT usuario.contraseña FROM usuario WHERE email='$email'");
+        if($query5[0]->contraseña==$password)
+		{
+        $query=DB::update("update usuario set id_rol='$id_rol', nombre_usuario='$nombre_usuario', apellidos='$apellidos', fecha_nacimiento='$fecha_nacimiento', correo='$correo', nombre='$nombre' where id_usuario=?",[$id_usuario]);
         
          $query2=DB::update("update cliente set telefono='$telefono', direccion='$direccion', ciudad='$ciudad', estado='$estado', peso='$peso', estatura='$estatura' where id_cliente=?",[$id_usuario]);
         return redirect()->action('ClienteController@clientes_mostrar')->withInput();
+        }
+        else
+        {
+            $encryptedPassword = bcrypt($contrasenia);
+             $query=DB::update("update usuario set id_rol='$id_rol', nombre_usuario='$nombre_usuario', apellidos='$apellidos', fecha_nacimiento='$fecha_nacimiento', correo='$correo', contraseña='$encryptedPassword', nombre='$nombre' where id_usuario=?",[$id_usuario]);
+        
+             $query2=DB::update("update cliente set telefono='$telefono', direccion='$direccion', ciudad='$ciudad', estado='$estado', peso='$peso', estatura='$estatura' where id_cliente=?",[$id_usuario]);
+             return redirect()->action('ClienteController@clientes_mostrar')->withInput();
+        }
 	}
 }

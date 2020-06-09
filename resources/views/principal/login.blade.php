@@ -15,22 +15,22 @@
                     
                                           <section id="primary" class="content-full-width">
                     
-                    <article id="post-8" class="post-8 page type-page status-publish hentry"><div class="woocommerce">
-
-
+                    <article id="post-8" class="post-8 page type-page status-publish hentry">
+    <div class="woocommerce">
 
 		<h2>Iniciar sesión</h2>
 
-		<form class="woocommerce-form woocommerce-form-login login" method="post">
+		<form class="woocommerce-form woocommerce-form-login login" method="POST" action={{route('logueo')}}>
+            {{ csrf_field() }}
 
 			
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-				<label for="username">Email<span class="required">*</span></label>
-				<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" value="">
+				<label for="username">Nombre de usuario<span class="required">*</span></label>
+				<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="nombre_usuario" id="nombre_usuario" value="" required>
 			</p>
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 				<label for="password">Contraseña <span class="required">*</span></label>
-				<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password">
+				<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="contraseña" id="contraseña" required>
 			</p>
 
 			
@@ -46,16 +46,12 @@
 			<p >
 				<a href="">No sabes tu contraseña?</a>
 			</p>
-            
-
-
 			
-		</form>
-
-
-</div>
-<div class="social-bookmark"></div>                    </article>
-                  </section>
+		    </form>
+           </div>
+                  <div class="social-bookmark"></div>
+         </article>
+</section>
   
                   
               </div>

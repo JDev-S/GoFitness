@@ -18,7 +18,7 @@ class Admin
     public function handle($request, Closure $next,$rol)
     {
           
-        $correo=Session::get('email');
+        $correo=Session::get('nombre_usuario');
        
         if($correo==null)
         {
@@ -26,7 +26,7 @@ class Admin
         }
         else{
 
-            $query = "select * from usuario where email='$correo'";
+            $query = "select * from usuario where nombre_usuario='$correo'";
             $data=DB::select($query);
            
            

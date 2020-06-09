@@ -19,13 +19,13 @@ class Cliente
     {
         
      
-        $correo=Session::get('email');
+        $correo=Session::get('nombre_usuario');
         if($correo==null)
         {
             return redirect('/');     
         }
         else{
-            $query = "select * from usuario where email='$correo' ";
+            $query = "select * from usuario where nombre_usuario='$correo' ";
             $data=DB::select($query);
            
             
@@ -34,13 +34,10 @@ class Cliente
                     return $next($request);
                 }
                 else{
-                    return redirect('/Admin_categoria');     
+                    return redirect('/Admin_clientes');     
                 }
         }
         
-        
-       
-      
    
         
     }

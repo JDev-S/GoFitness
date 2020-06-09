@@ -27,6 +27,7 @@ class InstructorController extends Controller
         $fecha_nacimiento = $input['fecha_nacimiento'];
         $correo = $input['correo'];
         $contrasenia = $input['contraseña'];
+        $encryptedPassword = bcrypt($contrasenia);
         $nombre = $input['nombre'];
         
         $estudios = $input['estudios'];
@@ -42,7 +43,7 @@ class InstructorController extends Controller
         
         /*ROLLBACK*/
         
-        $query=DB::insert('insert into usuario (id_usuario,id_rol,nombre_usuario,apellidos,fecha_nacimiento,correo,contraseña,nombre) values ( ?, ?, ?, ?, ?, ?, ?, ?)', [null, $id_rol, $nombre_usuario, $apellidos,$fecha_nacimiento,$correo,$contrasenia,$nombre]);
+        $query=DB::insert('insert into usuario (id_usuario,id_rol,nombre_usuario,apellidos,fecha_nacimiento,correo,contraseña,nombre) values ( ?, ?, ?, ?, ?, ?, ?, ?)', [null, $id_rol, $nombre_usuario, $apellidos,$fecha_nacimiento,$correo,$encryptedPassword,$nombre]);
         
        $id_instructor=DB::select('select id_usuario from usuario order by id_usuario desc limit 1');
         
@@ -66,10 +67,10 @@ class InstructorController extends Controller
         
         $estudios = $input['estudios'];
         $experiencia = $input['experiencia'];
-        
-        
-       
-        
+            
+         $query5=DB::select("SELECT usuario.contraseña FROM usuario WHERE correo='$email'");
+        if($query5[0]->contraseña==$password)
+		{
         if($input->hasFile('foto'))
             {
                  $file=$input->file('foto');
@@ -77,7 +78,7 @@ class InstructorController extends Controller
                  $file->move(public_path().'/images/',$name);
                  $foto="/images/".$name;
 
-                $query=DB::update("update usuario set id_rol='$id_rol', nombre_usuario='$nombre_usuario', apellidos='$apellidos', fecha_nacimiento='$fecha_nacimiento', correo='$correo', contraseña='$contrasenia', nombre='$nombre' where id_usuario=?",[$id_instructor]);
+                $query=DB::update("update usuario set id_rol='$id_rol', nombre_usuario='$nombre_usuario', apellidos='$apellidos', fecha_nacimiento='$fecha_nacimiento', correo='$correo', nombre='$nombre' where id_usuario=?",[$id_instructor]);
         
          $query2=DB::update("update instructor set estudios='$estudios', experiencia='$experiencia', foto='$foto' where id_instructor=?",[$id_instructor]);
         return redirect()->action('InstructorController@instructores_mostrar')->withInput();
@@ -91,7 +92,32 @@ class InstructorController extends Controller
                
             }
         
+        }
         
+        else
+        {
+            $encryptedPassword = bcrypt($contrasenia);
+            if($input->hasFile('foto'))
+            {
+                 $file=$input->file('foto');
+                 $name=time().$nombre.'_'.$apellidos;
+                 $file->move(public_path().'/images/',$name);
+                 $foto="/images/".$name;
+
+                $query=DB::update("update usuario set id_rol='$id_rol', nombre_usuario='$nombre_usuario', apellidos='$apellidos', fecha_nacimiento='$fecha_nacimiento', correo='$correo', contraseña='$contrasenia', nombre='$nombre' where id_usuario=?",[$id_instructor]);
+        
+         $query2=DB::update("update instructor set estudios='$estudios', experiencia='$experiencia', foto='$foto' where id_instructor=?",[$id_instructor]);
+        return redirect()->action('InstructorController@instructores_mostrar')->withInput();
+            }
+            else
+            {
+                $query=DB::update("update usuario set id_rol='$id_rol', nombre_usuario='$nombre_usuario', apellidos='$apellidos', fecha_nacimiento='$fecha_nacimiento', correo='$correo', contraseña='$encryptedPassword', nombre='$nombre' where id_usuario=?",[$id_instructor]);
+        
+         $query2=DB::update("update instructor set estudios='$estudios', experiencia='$experiencia' where id_instructor=?",[$id_instructor]);
+        return redirect()->action('InstructorController@instructores_mostrar')->withInput();
+               
+            }
+        }
         
         
 	}
